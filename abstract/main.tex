@@ -1,0 +1,41 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{bm}
+\usepackage{url}
+\newcommand{\pder}[2][]{\frac{\partial#1}{\partial#2}}
+\renewcommand{\vec}[1]{\bm{#1}}
+
+\title{{\bf Ontologies in Computational Materials Science}\\Abstract for FAIR-DI conference\\3-5 June, 2020}
+\author{Maja-Olivia Lenz, Luca M. Ghiringhelli, Carsten Baldauf, Matthias Scheffler}
+\begin{document}
+\maketitle
+\setlength{\parindent}{0mm}
+
+% Vocabulary:
+%% full-fledged
+%% pertain
+%% tedious, viable
+%% formalized
+%% fashion
+%% inherent
+%% present, discuss, showcase
+
+% DPG Abstract
+%In recent years, the amount of data in materials science has increased exponentially. Consequently, new ways to store and annotate data are necessary to ensure findability, accessibility, interoperability and re-usability, i.e. to fulfil the FAIR principles [1], and to do efficient, good and new science. Data describing and characterizing other data are called metadata. Often, the materials science community has no clear distinction between data and their metadata as it depends on the intended use of the data. In this talk, we present the NOMAD MetaInfo [2], a general descriptive and structured metadata scheme for materials simulations. Ontologies represent the next step on the semantic ladder, as they enrich pure (meta)data structures by relations and thereby enable semantic and syntactic interoperability between different software agents, people, and organizations. In fact, the NOMAD MetaInfo includes a number of relations between concepts and therefore goes beyond the simple metadata picture. It can be interpreted as a light-weight ontology and thus can easily be connected to other ontologies like the European Materials and Modeling Ontology, EMMO. We give an introduction to ontologies, explain why they are useful, and outline their role and current status in materials science. 
+
+
+With the tremendous increase in the amount of data in materials science, new ways to store and annotate data are necessary to ensure fulfilling the FAIR principles -- and to do efficient, good, and new science. Consequently, ontologies have been of increased interest as they do not only allow storing and annotating but also semantically linking data even across domains. 
+This way data is represented in a machine-readable fashion which opens up new application possibilities, for example in interdisciplinary research, to increase the reusability of data, or simply asking complex questions.
+The European Materials and Modeling Ontology, EMMO (\url{http://emmo.info/}), is an attempt to provide a standard representational framework for the physical sciences. However, appropriate ready-to-use domain ontologies are so far completely lacking in the field of materials science. There are several large databases for computational material data each adopting their own meta data schemes for data annotation. The largest is the NOMAD Repository that has most other relevant databases in the field included.
+Furthermore, the NOMAD Archive provides a normalized form of these data independent of their source using the NOMAD Metainfo [1] as metadata schema. The NOMAD Metainfo includes a number of relations between concepts and therefore goes beyond the simple metadata picture. We are converting it to the ontology format OWL and demonstrate how this enables connecting multiple sources of knowledge.
+Within the NOMAD ecosystem, we have created a Crystal Structure Ontology (CSO) in order to represent material, in particular crystal solids, as well as a Materials Properties Ontology (MPO) that semantically describes concepts used by materials scientists. One of the more complex concepts is for example the electronic band structure and its relations to other properties.
+We demonstrate a first application of this NOMAD ontology triad (Metainfo Ontology, CSO and MPO) and showcase interoperability with external ontologies.
+As an outlook we discuss ideas how to connect with experimental data through ontologies.
+
+
+\vskip 1cm
+[1] L. M. Ghiringhelli {\it et al.}, npj Comput. Mater. 3, {\bf 46} (2017).
+
+\end{document}
